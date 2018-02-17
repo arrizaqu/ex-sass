@@ -1,6 +1,25 @@
-$primary-color: red;
-$myborwn : brown;
-$myyellow : yellow;
-.contoh{
-	color : $myyellow;
+$bg-nav : black;
+$bg-link : blue;
+$hover-color: yellow;
+$text-color: white;
+nav {
+	ul {
+		background: $bg-nav;
+		margin: 0;
+		list-style:none;
+		padding: 0;
+	}
+	li{
+		display: inline-block;
+		background: $bg-link;
+	}
+	a{
+		color: $text-color;
+		display: inline-block;
+		text-decoration: none;
+		padding: 10px 18px;
+	}
+	a:hover{
+		background: $hover-color;
+	}
 }
