@@ -18,6 +18,21 @@ $primary-color: red;
 	color : $primary-color;
 }
 ```
+* create html file, example : 
+```html
+<!Doctype html>
+<html>
+	<head>
+		<title>hello sass</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div class="contoh">
+			hallo, arrizaqu
+		</div>
+	</body>
+</html>
+```
 * check command 
 ```java
 sass --watch F:\data\Repository_2\ex-sass\app\main.scss:main.css
