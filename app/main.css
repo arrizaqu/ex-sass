@@ -1,11 +1,17 @@
 .mainPanel, .panel1, .panel2 {
   margin-top: 20px;
-  background-color: red; }
+  background-color: red;
+  border: 5px solid blue;
+  padding: 10px; }
 
 .panel1 {
   font-size: 1em; }
 
 .panel2 {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px;
   font-size: 2em; }
 
 nav ul {

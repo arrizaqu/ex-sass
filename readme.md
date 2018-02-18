@@ -3,6 +3,7 @@
 * Hello world 
 * @import sass (partial)
 * @extend
+* @mixin and @include
 
 ## Installation 
 ### windows 
@@ -94,4 +95,24 @@ $bg-mainPanel : red;
 	@extend .mainPanel;
 	font-size: 2em;
 }
+```
+
+## @mixin and @include
+almost the same as @extend, the difference is, with @mixin we can make as a method, definition and so we can send the variable from argument to parameter.
+@mixin to definition as method, and @include to call a @mixin.
+#### example : 
+```css
+@mixin border-radius($volume){
+	-moz-border-radius: $volume;
+	-webkit-border-radius: $volume;
+	-ms-border-radius: $volume;
+	border-radius: $volume;
+}
+
+.panel2{
+	@extend .mainPanel;
+	@include border-radius(50px);
+	font-size: 2em;
+}
+
 ```

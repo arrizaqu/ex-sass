@@ -7,6 +7,15 @@ $bg-mainPanel : red;
 .mainPanel {
 	margin-top: 20px;
 	background-color: $bg-mainPanel; 
+	border: 5px solid blue;
+	padding: 10px;
+}
+
+@mixin border-radius($volume){
+	-moz-border-radius: $volume;
+	-webkit-border-radius: $volume;
+	-ms-border-radius: $volume;
+	border-radius: $volume;
 }
 
 .panel1{
@@ -16,6 +25,7 @@ $bg-mainPanel : red;
 
 .panel2{
 	@extend .mainPanel;
+	@include border-radius(50px);
 	font-size: 2em;
 }
 
