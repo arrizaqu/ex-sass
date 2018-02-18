@@ -1,6 +1,6 @@
 # Sass 
 * Installation 
-* Hello world 
+* Sass variable
 * @import sass (partial)
 * @extend
 * @mixin and @include
@@ -14,7 +14,7 @@
 gem install sass
 ```
 
-## Hello world
+## Sass variable
 * create main.scss 
 ```css
 $bg-nav : black;
