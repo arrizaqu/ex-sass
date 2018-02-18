@@ -29,6 +29,12 @@ $bg-mainPanel : red;
 	font-size: 2em;
 }
 
+.panel3{
+	@extend .mainPanel;
+	@include border-radius(30px);
+	font-size: 30px + 40;
+}
+
 nav {
 	ul {
 		background: $bg-nav;

@@ -1,4 +1,4 @@
-.mainPanel, .panel1, .panel2 {
+.mainPanel, .panel1, .panel2, .panel3 {
   margin-top: 20px;
   background-color: red;
   border: 5px solid blue;
@@ -13,6 +13,13 @@
   -ms-border-radius: 50px;
   border-radius: 50px;
   font-size: 2em; }
+
+.panel3 {
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 70px; }
 
 nav ul {
   background: black;

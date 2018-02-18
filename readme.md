@@ -4,6 +4,7 @@
 * @import sass (partial)
 * @extend
 * @mixin and @include
+* working with operator
 
 ## Installation 
 ### windows 
@@ -114,5 +115,13 @@ almost the same as @extend, the difference is, with @mixin we can make as a meth
 	@include border-radius(50px);
 	font-size: 2em;
 }
+```
 
+## working with operator
+```css
+.panel3{
+	@extend .mainPanel;
+	@include border-radius(30px);
+	font-size: 30px + 40;
+}
 ```
