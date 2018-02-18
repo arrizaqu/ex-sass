@@ -1,6 +1,8 @@
 # Sass 
 * Installation 
 * Hello world 
+* @import sass (partial)
+* @extend
 
 ## Installation 
 ### windows 
@@ -66,3 +68,30 @@ nav {
 sass --watch F:\data\Repository_2\ex-sass\app\main.scss:main.css
 ```
 so, it will automatically created main.css file 
+
+## @import sass (partial) 
+sass @import can import another file of sass (.scss) extention begin _filename, example
+* File name (_testName.scss)
+* main css 
+```css
+@import "testName"
+```
+
+## @extend 
+sass posible to make extend css for example class for another definition
+### example
+```css
+$bg-mainPanel : red;
+.mainPanel {
+	margin-top: 20px;
+	background-color: $bg-mainPanel; 
+}
+.panel1{
+	@extend .mainPanel;
+	font-size: 1em;
+}
+.panel2{
+	@extend .mainPanel;
+	font-size: 2em;
+}
+```

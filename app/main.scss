@@ -2,6 +2,23 @@ $bg-nav : black;
 $bg-link : blue;
 $hover-color: yellow;
 $text-color: white;
+$bg-mainPanel : red;
+
+.mainPanel {
+	margin-top: 20px;
+	background-color: $bg-mainPanel; 
+}
+
+.panel1{
+	@extend .mainPanel;
+	font-size: 1em;
+}
+
+.panel2{
+	@extend .mainPanel;
+	font-size: 2em;
+}
+
 nav {
 	ul {
 		background: $bg-nav;
